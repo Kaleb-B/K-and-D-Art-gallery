@@ -1,83 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaleb Besufikad</title>
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kaleb Besufikad</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+        <style>
+            #logo{
+                width: 70%;
+                max-width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row vh-100 flex-nowrap">
+                <div class="col-5 col-sm-3 col-xl-2 bg-dark navbar-dark pl-3 pl-lg-2 pt-4 position-fixed h-100" id="sticky-sidebar">
+                    <a href="index.html">
+                        <img src="assets/images/favicon.png" id="logo" alt="">
+                    </a>
+                    <ul class=" navbar-nav pt-5 pb-5 mb-5">
+                        <li class="nav-item"><a class="nav-link  pl-1" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link pl-1" href="KalebsGallery.html">Kaleb's Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link active pl-1" href="DariksGallery.html">Darik's Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link pl-1" href="about Kaleb.html">About Kaleb</a></li>
+                        <li class="nav-item"><a class="nav-link pl-1" href="about Darik.html">About Darik</a></li>
+                        <li class="nav-item"><a class="nav-link pl-1" href="contact.html">Contact me</a></li>
+                    </ul>
+                    <div class="pt-5 mt-5 ">
+                        <ul class="navbar-nav pt-5 mt-5  align-bottom nav-item justify-content-center">
+                            <li class="row">
+                                <a class="col-2 offset-1"href="#">
+                                    <i class="nav-link ico-link fa fa-facebook-square fa-lg" ></i>
+                                </a>
+                                <a class="col-2 offset-1"href="#">
+                                    <i class="nav-link ico-link fab fa-linkedin fa-lg" ></i>
+                                </a>
+                                <a class="col-2 offset-1"href="#">
+                                    <i class="nav-link ico-link fab fa-telegram fa-lg" ></i>
+                                </a>
 
-
-    
-    <table cellspacing= 5>
-        <td>
-            <tr><table>
-                <tr><td>
-                    <img src="images/favicon.png" width = 100 alt=""></td>
-                    <td rowspan="3">
-                        <!-- BODY -->
-                                            <iframe  src = "assets/gallery2.html" frameborder="0" height="720" width= "1300"></iframe>
-                                        </td>
-                </tr>
-                <tr cellspacing= 5>
-    <!-- MENU -->   
-                    <td>
-                        <nav >
-                            <menuitem>
-                                <svg xmlns:xlink="index.html"height = 30 width = 120>
-                                    <a xlink:href="index.html">
-                                        <text  x="0" y="15" fill = "gray">Home</text>
-                                    </a>
-                                </svg>
-                            </menuitem>
-                            <menuitem>
-                                <svg height = 30 width = 120 xmlns:xlink="KalebsGallery.html">
-                                    <a xlink:href="KalebsGallery.html">
-                                        <text  x="0" y="15" fill = "gray">Kaleb's Gallery</text>
-                                    </a>
-                                </svg>,
-                            </menuitem>
-                            <menuitem>
-                                <svg height = 30 width = 120 xmlns:xlink="DariksGallery.html">
-                                    <a xlink:href="DariksGallery.html">
-                                        <text  x="0" y="15" fill = "orange">Darik's Gallery</text>
-                                    </a>
-                                </svg>
-                            </menuitem>
-                            <menuitem>
-                                <svg height = 30 width = 120 xmlns:xlink="about Kaleb.html">
-                                    <a xlink:href="about Kaleb.html">
-                                        <text  x="0" y="15" fill = "gray">About Kaleb</text>
-                                    </a>
-                                </svg>
-                            </menuitem><menuitem>
-                                <svg height = 30 width = 120 xmlns:xlink="about Darik.html">
-                                    <a xlink:href="about Darik.html">
-                                        <text  x="0" y="15" fill = "gray">About Darik</text>
-                                    </a>
-                                </svg></menuitem>
-                                <hr>
-                                <menuitem>
-                                    <table cellspacing = "5px">                        <tr><td><a href="http://www.facebook.com"><img src="images/SMIcons/FB.png" alt="Facebook" width=20></a></td>
-                                        <td><a href="http://www.linkedin.com"><img src="images/SMIcons/linkedin.png" alt="LinkedIn" width = 20></a></td>
-                                        <td><a href="http://www.telegram.org"><img src="images/SMIcons/tg.png" alt="Telegram" width = 20></a></td>
-                                    </tr></table>
                                 
-                        
-                                    
-                                                <svg height = 30 width = 120>
-                                                        <text x="0" y="15" fill = "gray">Kaleb Besufikad </text><br></svg>
-                                                        <svg height = 30 width = 120 >
-                                                            <text x="0" y="15" fill = "gray">© 2020</text></svg></menuitem>
-                                                        </nav>
-                    </tr>
-                    
-                
-            </table></tr>
-        </td>
-    </table>
+                            </li>
+                            <li class="nav-item"><p class="navbar-text small">copyright &copy; 2020 <br>Kaleb Besufikad </p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col pl-5 offset-5 offset-sm-3 offset-xl-2">
+                        <h3>Content..</h3>
+                </div>
+            </div>
+        </div>
 
-</body>
+
+
+
+
+
+
+
+        <!-- <div class="container-fluid">
+        <div class="row ">
+            <nav class="col-4 col-sm-2 col-xl-1 bg-dark navbar-dark pl-4 pt-4 position-fixed h-100" id="sticky-sidebar">
+                
+                <ul class=" navbar-nav pt-5">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="KalebsG.html">Kaleb's Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="DariksG.html">Darik's Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about Kaleb.html">About Kaleb</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about Darik.html">About Darik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact me</a></li>
+                </ul>
+                <ul class="navbar-nav pt-5 align-bottom"></ul>
+            </nav>
+            <div class="col pl-5 offset-4 offset-sm-2 offset-xl-1" id="main">
+asdfghjkl            </div>
+    </div>
+    </div > -->
+
+    <!-- <div class="container-fluid fixed-top bg-dark py-3">
+        
+        <div class="row">
+            <div class="col-sm-3 col-0 collapse show sidebar">
+            </div>
+            <div class="col px-3">
+                <a data-toggle="collapse" href="#" data-target=".collapse" role="button">
+                </a>
+            </div>
+        </div>
+    </div> --> 
+
+    </body>
 </html>
