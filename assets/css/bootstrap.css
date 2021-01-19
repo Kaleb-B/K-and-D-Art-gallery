@@ -4277,7 +4277,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: orange;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4399,7 +4399,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 0px  transparent;
   border-radius: 0.25rem;
 }
 
@@ -4653,7 +4653,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(109, 106, 106, 0.9);
+  color: orange;
 }
 
 .navbar-light .navbar-toggler {
