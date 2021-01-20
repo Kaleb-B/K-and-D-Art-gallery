@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
-*{
+* {
     font-family: 'Yusei Magic', sans-serif;
+    color: #bbb;
 }
 
 
@@ -9,13 +10,18 @@ body{
     overflow-x: hidden;
 }
 
-.img-thumbnails{
+.img-fluid{
+    min-width: 100px;
     width: 100%;
     min-height: 100%;
+    max-height: 100%;
     object-fit: cover;
+    margin:0;
+    padding: 0;
     padding-bottom: 0.5em;
-    padding-right: 0.2em;
-    padding-left: 0.2em;
+    padding-right: 0.25em;
+    padding-left: 0.25em;
+
 }
 /* ================================================================= */
 /* css of sidebar for mobile phone screens */
@@ -24,57 +30,59 @@ body{
 }
 .nav-small-collapsed{
     position: fixed;
-    top: 0;
     width: 100%;
+    background-color: white;
+    top: 0;
+    transition: 0.3s;
+    transition: top 0.3s ease-out;
     height: 80px;
     z-index: 100;
-    background-color: white;
-    transition: 0.5s;
-    transition: top 0.5s ease-out;
 }
 .nav-small-collapsed .website-logo{
     color: #bbb;
     font-size: 2em !important;
-    max-width: 2em !important;
+    /* max-width: 2em !important; */
     margin-left: 1em;
 }
-.last-name-orange{
+.orange-text, .orange-text b{
     color: orange;
 }
-#menu, #cancel{
+#sidebar, #cancel{
     position: absolute;
+    color: #bbb;
+    
+    background-color: white;
     top: 20%;
     right: 20px;
-    color: #bbb;
+    padding: 4px 8.67px;
     font-size: 25px;
     cursor: pointer;
-    padding: 4px 8.67px;
-    background-color: white;
 }
 #cancel{
     display: none;
 }
 .nav-expanded{
     position: fixed;
-    left: -500px;
+    background-color: white;
     width: 74%;
     height: 100vh;
-    transition: 0.5s;
-    padding-left: 2em;
+    left: -500px;
     overflow: hidden;
-    background-color: white;
+    transition: 0.3s;
+    padding-left: 1.5em;
 }
 .nav-expanded .website-logo{
     color: #bbb;
     font-size: 2em !important;
     margin-bottom: 0.8em;
 }
-.nav-expanded .nav-link{
+.nav-expanded .nav-link, .nav-expanded .page-links .nav-item .btn, .nav-expanded .page-links .nav-item .nav-link .collapse a, #galList a, pre, p{
     color: #bbb;
     font-size: 17px;
-    width: min-content;
+    width: max-content;
+    text-decoration: none;
 }
-.nav-expanded .nav-link.active, .nav-expanded .nav-link:hover, .nav-expanded .social-icons span:hover{
+.nav-expanded .nav-link.active, .nav-expanded .nav-link:hover, .nav-expanded .social-icons span:hover, .nav-expanded .navbar-nav .nav-item a.nav-link:hover , .nav-expanded .navbar-nav .nav-item .nav-link .collapsea a:hover, #galList a:hover, #link{
     color: orange;
 }
 .nav-expanded .social-icons{
@@ -90,20 +98,20 @@ body{
 .nav-expanded #copyright{
     color: #bbb;
     margin-top: 30px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .content{
     position: relative;
     left: 0;
     top: 80px;
     margin-left: 1em;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #check:checked ~ .nav-expanded{
     left: 0;
     z-index: 101;
 }
-#check:checked ~ div label #menu{
+#check:checked ~ div label #sidebar{
     display: none;
     pointer-events: none;
 }
@@ -111,7 +119,7 @@ body{
     display: block;
 }
 #check:checked ~ .content{
-    left: 74%;
+    left: 70%;
     opacity: 0.6;
 }
 #check:checked ~ .nav-small-collapsed{
@@ -129,7 +137,7 @@ body{
     }
     .nav-expanded{
         position: static;
-        flex: 0 0 230px;
+        flex: 0 0 250px;
         width: auto;
     }
     .nav-expanded .website-logo{
@@ -148,7 +156,7 @@ body{
         padding: 0.5em 0;
     }
     .nav-expanded .social-icons span{
-        font-size: 11px;
+        font-size: 20px;
     }
     .nav-expanded #copyright{
         position: relative;
@@ -160,8 +168,11 @@ body{
         height: 100vh;
         overflow-y: auto;
         margin-left: 1%;
+        margin-right: 1%;
     }
     #check:checked ~ .content{
         opacity: 1;
     }
  }
+ 
+
